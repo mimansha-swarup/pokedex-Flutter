@@ -1,6 +1,10 @@
 # kantodex
 
-A new Flutter application.
+Replica of Pokedex upto kanto Region
+
+## Screenshots
+
+![Loading Screen](https://github.com/mimansha-swarup/pokedex-Flutter/blob/master/loadingScreen.jpg)
 
 ## Getting Started
 
