@@ -5,9 +5,11 @@ Replica of Pokedex upto kanto Region
 ## Screenshots
 
 LOADING SCREEN
+
 ![Loading Screen](https://github.com/mimansha-swarup/pokedex-Flutter/blob/master/loadingScreen.jpg)
 
 HOME PAGE
+
 ![home page](https://github.com/mimansha-swarup/pokedex-Flutter/blob/master/Homepage.jpg)
 
 ![pokemon cards](https://github.com/mimansha-swarup/pokedex-Flutter/blob/master/ss1.jpg)
