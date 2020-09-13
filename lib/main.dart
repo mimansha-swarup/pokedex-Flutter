@@ -1,9 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:kantodex/Pages///loading.dart';
 import 'package:kantodex/Pages/home.dart';
-import 'package:kantodex/service/pokedetails.dart';
+
 
 
 void main() {
@@ -25,11 +24,12 @@ void main() {
   };
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: '/',
-    routes: {
-      '/': (context) => Loading(),
-      '/home': (context) => HomeScreen(),
-      '/details':(context) => PokeBio(),
-    },
+    home: HomeScreen(),
+//    initialRoute: '/home',
+//    routes: {
+//      '/': (context) => Loading(),
+//      '/home': (context) => HomeScreen(),
+//      '/details':(context) => PokeBio(),
+//    },
   ));
 }

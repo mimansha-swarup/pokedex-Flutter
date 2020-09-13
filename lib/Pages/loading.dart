@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:http/http.dart';
-import 'package:kantodex/Animation/rotate_image.dart';
-import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 
 
@@ -15,25 +12,6 @@ class Loading extends StatefulWidget {
 class _LoadingState extends State<Loading> {
 
 
-
-  void gotoHome() async {
-
-    Response response =await get('https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json');
-    Map data =jsonDecode(response.body);
-
-
-    await Future.delayed(Duration(seconds: 8));
-    Navigator.pushReplacementNamed(context, '/home', arguments: data);
-  }
-
-  @override
-  void initState()  {
-    super.initState();
-
-    gotoHome();
-
-
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,9 +66,13 @@ class PokeLoad extends StatelessWidget {
           SpinKitPulse(
             size: 110,
             color: Colors.amberAccent,
-            duration: Duration(seconds: 3),
+            duration: Duration(seconds: 2),
           ),
-          RotateImage(),
+          Image.asset(
+            'images/pokeball.png',
+            height: 90,
+            width: 90,
+          ),
         ],
       ),
     );
